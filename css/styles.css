@@ -167,7 +167,6 @@ img {
 /* -----Hero---*/
 .hero {
   max-width: 1440px;
-  height: 600px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -230,7 +229,11 @@ img {
   gap: 24px;
 }
 .features-icon {
-    padding: 24px 100px;
+    display: flex;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
     background-color: var(--color-cloud);
 }
 .section-two-item {
@@ -238,7 +241,7 @@ img {
 }
 
 .section-two-list-title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .section.about {
   padding-top: 0;
@@ -296,7 +299,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px;
 }
 
 .team-soc-link:hover,
@@ -320,7 +322,7 @@ img {
   justify-content: center;
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
-  padding: 16px 32px;
+  height: 88px;
 }
 .customers-icon {
     fill:#AFB1B8
@@ -384,7 +386,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
   }
  .soc-icon{
     fill: #FFFFFF;
@@ -406,11 +407,13 @@ img {
   column-gap: 24px;
 }
 .projects-list-item {
-  width: 360px;
-  height: 420px;
+  width: calc((100% - 48px)/3);
   background: #ffffff;
 }
-.projects-list-item:hover {
+.projects-link {
+  display: block;
+}
+.projects-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
